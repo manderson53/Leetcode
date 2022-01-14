@@ -4,8 +4,9 @@
 # I struggled with this more than I should have because I didn't realize things like LC were not valid roman numerals
 # one of the constraints in the problem is 'It is guaranteed that s is a valid roman numeral in the range [1, 3999]
 # So I didn't realize you could just subtract the one before adding the 5 for IV because that doesn't work for LC
-# (an invalid roman numeral) LC doesn't subtract from 100 so in theory it's 150 but this program returns 50
-# Long story short I briefly looked up solutions to this one before submitting.
+# (an invalid roman numeral) LC doesn't subtract from 100 so in theory it's 150 but this program returns 50 which
+# doesn't matter because LC is an invalid roman numeral anyways. I got caught up inventing problems that did not exist
+# so long story short I briefly looked up solutions to this one before submitting.
 
 class Solution:
     def romanToInt(self, s: str) -> int:
