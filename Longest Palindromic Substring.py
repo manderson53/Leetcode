@@ -9,7 +9,7 @@ class Solution:
         max_palindrome = ''
         length = len(s)
         substrings = []
-        if length == 1:
+        if length == 1 or Solution.isPalindrome(None, s):
             return s
 
         for i in range(0, length):
